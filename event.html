@@ -5,48 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <link rel="stylesheet" href="./templatesEvent.css">
 </head>
+
 <body>
     <header>
-        <img src="./images/logo.png">
+        <img id="ImagenHeader" src="./images/logo.png">
 
-        <a href="">Evento</a>
-        <a href="">Sobre Nosotros</a>
+        <ul class="HeaderMenu">
+            <li><a href="">Evento</a></li>
+            <li><a href="">Sobre Nosotros</a></li>
+        </ul>
     </header>
 
-    <div>
-        <img src="./images/evento.jpg">
+    <div id="container">
+        <div id="CenterMain">
+            <img id="ImagenMain" src="./images/evento.jpg">
+
+            <h1>#FeriaDelHogar</h1>
+        </div>
+
+        <div id="RightMain">
+            <section>
+                <img class="ImagenesRigth" src="./images/event 1.jpg">
+                <h1 class="TitlesRigth">Descuento Fin</h1>
+           
+                <img class="ImagenesRigth" src="./images/event 2.jpg">
+                <h1 class="TitlesRigth">La Tiquetera</h1>
+         
+                <img class="ImagenesRigth" src="./images/event 3.jpg">
+                <h1 class="TitlesRigth">Clowfest</h1>
+            </section>
+        </div>
     </div>
 
-    <h1>#FeriaDelHogar</h1>
-
-    <div>
-        <section>
-            <img src="./images/event 1.jpg">
-            <p>Descuento Fin</p>
-        </section>
-        <section>
-            <img src="./images/event 2.jpg">
-            <p>La Tiquetera</p>
-        </section>
-        <section>
-            <img src="./images/event 3.jpg">
-            <p>Clowfest</p>
-        </section>
-    </div>
-
-    <div>
+    <div id="TableLabel">
         <table>
+                <thead>
+                    <tr>
+                        <th class="HeadLabel">Tipo de Ticket</th>
+                        <th class="HeadLabel">Valor</th>
+                        <th class="HeadLabel">Cantidad</th>
+                    </tr>
+                </thead>
             <tr>
-                <th>Tipo de Ticket</th>
-                <th>Valor</th>
-                <th>Cantidad</th>
-            </tr>
-            <tr>
+                
                 <th>Plateada</th>
                 <th>129.000</th>
                 <th>
-                    <select name="" id="">
+                    <select name="" class="Optiones">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -59,7 +66,7 @@
                 <th>Luneta</th>
                 <th>113.000</th>
                 <th>
-                    <select name="" id="">
+                    <select name="" class="Optiones">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -72,7 +79,7 @@
                 <th>General</th>
                 <th>101.000</th>
                 <th>
-                    <select name="" id="">
+                    <select name="" class="Optiones">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -83,12 +90,13 @@
             </tr>
         </table>
     </div>
+    
     <button>Comprar</button>
 
-    <div>
+    <div id="resultados">
         <p>Total: <span>0</span></p>
         <p>Iva: <span>0</span></p>
-        <p>Total a pagar <span>0</span></p>
+        <p>Total a pagar: <span>0</span></p>
     </div>
 
     <footer>
