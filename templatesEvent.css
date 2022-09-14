@@ -121,7 +121,7 @@ th{
     padding: 20px;
 }
 
-.Optiones{
+#TableLabel table tr th select{
     background-color: rgb(224, 224, 224);
     padding: 5px;
     width: 200px;
@@ -151,12 +151,31 @@ button:hover{
     margin: 80px 0px 0px 500px;
 }
 
-#resultados span {
+#total {
     color: black;
-    margin: 0px 0px 0px 300px;
-    display: block;
-    text-align: start;
+    margin: 0px 0px 0px 124px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
 }
+
+#iva {
+    color: black;
+    margin: 0px 0px 0px 139px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#Neto {
+    color: black;
+    margin: 0px 0px 0px 50px;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+
 
 footer{
     background-color:  rgb(141, 141, 141) ;

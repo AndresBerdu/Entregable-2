@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+
     <link rel="stylesheet" href="./templatesEvent.css">
+    
 </head>
 
 <body>
@@ -13,8 +15,8 @@
         <img id="ImagenHeader" src="./images/logo.png">
 
         <ul class="HeaderMenu">
-            <li><a href="">Evento</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
+            <li><a href="./event.html">Evento</a></li>
+            <li><a href="./index.html">Sobre Nosotros</a></li>
         </ul>
     </header>
 
@@ -53,7 +55,7 @@
                 <th>Plateada</th>
                 <th>129.000</th>
                 <th>
-                    <select name="" class="Optiones">
+                    <select name="" id="Opcion1">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -66,7 +68,7 @@
                 <th>Luneta</th>
                 <th>113.000</th>
                 <th>
-                    <select name="" class="Optiones">
+                    <select name="" id="Opcion2">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -79,7 +81,7 @@
                 <th>General</th>
                 <th>101.000</th>
                 <th>
-                    <select name="" class="Optiones">
+                    <select name="" id="Opcion3">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -91,14 +93,15 @@
         </table>
     </div>
     
-    <button>Comprar</button>
+    <button id="Comprar">Comprar</button>
 
     <div id="resultados">
-        <p>Total: <span>0</span></p>
-        <p>Iva: <span>0</span></p>
-        <p>Total a pagar: <span>0</span></p>
+        <p>Total: <span id="total">0</span></p>
+        <p>Iva: <span id="iva">0</span></p>
+        <p>Total a pagar: <span id="Neto">0</span></p>
     </div>
 
+    <script src="./script.js"></script>
     <footer>
         <p>PHOENIX @ 2022</p>
     </footer>
